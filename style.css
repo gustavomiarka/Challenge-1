@@ -1,0 +1,382 @@
+*{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(191,191,203,1) 100%, rgba(0,212,255,1) 100%);
+    overflow-x: hidden;
+    height: 1025px;
+}
+
+.alura {
+    position: relative;
+    width: 80px;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.vector {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 60px;
+    top: 40px;
+}
+
+.centro {
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 100px;
+    top: 400px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: #0A3871;
+    margin-left: 3%;
+}
+
+.lateral {
+    position: absolute;
+    width: 400px;
+    height: 844px;
+    left: 840px;
+    top: 40px;
+    font-size: 25px;
+    resize: none;
+    padding: 20px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    z-index:3;
+    margin-bottom: 120px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 50px;
+    top: 855px;
+}
+
+.boton {
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    flex: none;
+    flex-grow: 1;
+    margin: 0px 24px;
+}
+
+#encriptar {
+    left: 0px;
+    background: #0A3871;
+}
+
+#desencriptar {
+    left: 352px;
+    background: #D8DFE8;
+}
+
+.btn{
+    width: 280px;
+    height: 19px;
+    left: 24px;
+    top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    order: 0;
+}
+
+#enc {
+    color: #FFFFFF;
+}
+
+#des, #cpy{
+    color: #0A3871;
+}
+
+.super {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 110px;
+    top: 821px;
+}
+
+
+
+.aclaracion {
+    position: static;
+    width: 400px;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+    font-weight: 400;
+    line-height: 150%;
+    color: white;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 1px;
+}
+
+.text-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 336px;
+    height: 222px;
+    left: 895px;
+    top: 619px;
+    z-index: 50;
+}
+
+
+#lat1 {
+    height: 48px;
+    padding-left: 1%;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 100%;
+    color: #343A40;
+    order: 0;
+}
+
+#lat2 {
+    padding-left: 1%;
+    height: 28px;
+    top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    order: 1;
+}
+
+#copy{
+    position: absolute;
+    height: 68px;
+    top: 45px;
+    margin-top: 120px;
+    margin-left: 2px;
+}
+
+.img-lat {
+    position: relative;
+    width: 336px;
+    height: 354px;
+    left: 892px;
+    top: 250px;
+    z-index: 50;
+    border-radius: 24px;
+}
+
+#pie{
+    text-align: center;
+    color: white;
+    border-color: #000000;
+    vertical-align: bottom;
+    position: absolute;
+    top: 970px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: 200;
+
+}
+.invisible {
+	display:none;
+}
+
+@media screen and (max-width: 850px) {
+
+    body{
+        height: 1000px;
+        
+    }
+    .centro {
+        width: 80%;
+        height: 48px;
+        left: 60px;
+        top: 240px;
+    }
+
+    .super{
+        top: 440px;
+        left: 90px;
+    }
+
+    .botones {
+        display: flex;
+        width: 90%;
+        left: 40px;
+        top: 470px;
+    }
+
+    #encriptar, #desencriptar {
+        width: 40%;
+    }
+
+    .img-lat {
+        display: none;
+    }
+
+    .lateral {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        width: 80%;
+        height: 133px;
+        left: 40px;
+        top: 600px;
+        margin-left:0%;
+        margin-bottom: 20px;
+        margin-right: 10%;
+    }
+
+    .text-lateral {
+        padding-top: 3%;
+        width: 80%;
+        height: 133px;
+        left: 0%;
+        top: 620px;
+        padding-bottom: 50px;
+        margin: 0px auto;
+    }
+
+    #lat1, #lat2 {
+        text-align: center;
+        margin-left: 12%;
+        width: 100%;
+        height: 29px;
+    }
+
+    #lat2 {
+        top: 45px;
+    }
+
+    #copy{ 
+        width: 50%;
+        margin-top: 160px;
+        margin-left: 39%;
+        margin-right: 20%;
+    }
+
+    #pie{
+        top: 930px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    body{
+        height: 1200px;
+    }
+
+    .centro {
+        width: 343px;
+        height: 48px;
+        left: 33px;
+        top: 252px;
+        margin-left: 8%;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 58px;
+        left: 16px;
+        top: 485px;
+        margin-left: 9%;
+    }
+
+    #encriptar {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    #desencriptar{
+        width: 70%;
+    }
+
+    .lateral {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:12px;
+        position: absolute;
+        width: 270px;
+        height: 186px;
+        left: 28px;
+        top: 707px;
+        margin-left: 9%;
+    }
+
+    .text-lateral {
+        width: 688px;
+        height: 200px !important;
+        left: 70px;
+        top: 700px;   
+    }
+
+    #lat1, #lat2 {
+        padding-top: 40px;
+        text-align: center;
+        width: 45%;
+        height: 0px;
+        margin-left:1%;
+    }
+
+    #lat2 {
+        top: 0px;
+        order:0;
+    }
+
+    .super {
+        height: 18px;
+        left: 46px;
+        top: 451px;
+        margin-left: 13%;
+    }
+
+    #copy{
+        width: 46%;
+        top: 240px;
+        margin-top: 70px;
+        margin-left: 1%;
+    }
+
+    #pie{
+        top: 1150px;
+    }
+    
+}
